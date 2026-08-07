@@ -1,0 +1,17 @@
+class Solution {
+    public int findNumbers(int[] nums) {
+        int evenCount=0;
+        for(int i=0;i<nums.length;i++){
+            int digitcount=0;
+            int temp=nums[i];
+            while(temp>0){
+                digitcount++;
+                temp/=10;
+            }
+            if(digitcount%2==0){
+                evenCount++;
+            }
+        }
+        return evenCount++;
+    }
+}
